@@ -1,7 +1,11 @@
 **Estructuras de control y datos**  
 **Presentación**  
+<p align="justify">
 En programación, rara vez un código se ejecuta de manera secuencial línea por línea sin necesidad de tomar decisiones o repetir partes del código. Las estructuras de control permiten que un programa pueda "elegir" distintos caminos de ejecución y repetir acciones automáticamente, lo que resulta en un código más eficiente y manejable. Además de las estructuras de control, las estructuras de datos permiten albergar en una sola variable un conjunto de elementos para poder accederlos de forma única. Dependiendo de las características de nuestro código, podremos utilizar listas, tuplas, diccionarios o conjutos  
-  **1. Control del flujo**  
+</p>
+
+  **1. Control del flujo** 
+  <p align="justify">
 Si tenemos que hacer un código de programación, pocas veces debe tener una ejecución secuencial línea a línea, sin tener que realizar decisiones dependiendo de una condición lógica o repetir partes de este para ahorrar código. Es aquí donde entran las estrucutras que permiten controlar el flujo del programa, haciendo que éste pueda “elegir” distintos caminos de ejecución y repetir acciones de forma automática. Gracias a ellas ya no estaremos obligados a crear un flujo instrucciones secuencial y podremos tener la capacidad de tomar decisiones, iterar sobre datos y construir códigos mucho más potenter. Estas estructuras son de gran importancia debido a los siguientes aspectos:  
 * Permiten la toma de decisiones mediante las estructuras condicionales y/o de selección como son if – if/ else – if / else if /else
 * Permiten la repetición automática de código iterando sobre una colección o sobre una condición lógica mediante las estructuras de repeción como son for – while – do/while  
@@ -20,12 +24,18 @@ else:
 
 print("Mensaje ejecutado fuera de bloque")
 ```
-**1.1. Estructuras de selección**  
-Este tipo de estructura es la más sencilla dentro de Python, ya que permite indicar cual es la parte de código que se debe ejecutar dependiendo de un valor o condición lógica. Entre estas estructuras podemos encontrar  
-  **1.1.1. If – if/else – if/elif/else**
+</p>
 
+**1.1. Estructuras de selección** 
+<p align="justify">
+Este tipo de estructura es la más sencilla dentro de Python, ya que permite indicar cual es la parte de código que se debe ejecutar dependiendo de un valor o condición lógica. Entre estas estructuras podemos encontrar  
+</p>
+
+ **1.1.1. If – if/else – if/elif/else**
+<p align="justify">
 Cuando queramos que nuestro programa tome decisiones en tiempo de ejecución, utilizaremos la estructura if ya que, gracias a ella, Python podrá ejecutar un bloque u otro en función de si se cumple o no una condición booleana. En este caso tendremos la posibilidad de utilizar una sola condición (if), dos (if/else) o varias (if – elif – else), teniendo en cuenta que solo una de ellas podrá ser la correcta, y en el caso de cumplirse una, el resto no se analizarán. A continuación, podemos ver un ejemplo de esta estructura combinando diferentes if  
 numero = int(input("Por favor introduce el valor numérico que quieres evaluar "))
+ 
 ```python
 if numero<0 or numero>=100:  
     if numero<10:  
@@ -35,15 +45,17 @@ if numero<0 or numero>=100:
 else:  
     print("Valor no válido")
 ```
-**1.1.2. Match**
+</p>
 
+**1.1.2. Match**
+<p align="justify">
 En el caso de querer ejecutar un código directamente asociado al valor de una variable, la estructura if puede resultar muy tediosa. Para ello, es recomendable utiliza la estructura Match la cual evalua el valor de una variable y ejecuta de forma directa el caso correspondiente, pudiendo seleccionar un caso por defecto utilizando el carácter _
 
 Importante: La estructura de control match tan solo funciona de Python 3.10 en adelante
 
 A continuación, podemos ver un ejemplo de esta estructura combinando con la estructura if  
-opcion = input("Selecciona una opción (1, 2, 3):")  
 ```python
+opcion = input("Selecciona una opción (1, 2, 3):")  
 match opcion:  
     case "1":  
         print("Has seleccionado la opción 1: Ver perfil.")  
@@ -54,11 +66,14 @@ match opcion:
     case _:  
         print("Opción no válida. Inténtalo de nuevo.")
 ```
-**1.2. Estructuras de repetición**
+</p>
 
+**1.2. Estructuras de repetición**
+<p align="justify">
 Otro tipo de estructuras muy utilizadas son las de repetición. Éstas no permiten realizar ejecución de bloques de código recurrente sin necesidad de escribir n veces las mismas líneas. Son muy útiles para recorrer colecciones de datos o para ejecutar recursivamente una función sobre una condición lógica  
 **1.2.1. For**  
 La primera opción dentro de las estructuras de repetición es la del for. Esta estructura permite ejecutar un bloque de código en un rango determinado (indicando un incremento). Para ello se utiliza el método range(), pasando como parámetros el valor inicial, final e incrementeo del código. En cada iteración, la variable definida tomará un nuevo valor:  
+ 
 ```python
 for i in range(1,10,3):  
     print(i)
@@ -88,7 +103,10 @@ for i in range(1,10):
     for j in range(1,10):  
         print(f"{i}*{j}={i*j}")
 ```
+</p>
+
 **1.2.2. While**
+<p align="justify">
 Esta estructura de control permite repetir un bloque de código dependiendo de una condición lógica. Una de las cosas importante cuando se utiliza este tipo de estructura, es que antes de ejecutar el bloque, se analiza la condición de repetición, por lo que puede no llegar a ejecutarse nunca
 
 Importante: La condición de evaluación tiene que cambiar en algún momento. De no ser así, el bloque de repetición entrará en un bucle infinito a no ser que se aplique un break
@@ -115,9 +133,12 @@ while nombre != "admin" or password != "admin":
 
 print("Login correcto, puedes continuar")
 ```
-**Nota**
+</p>
 
+**Nota**
+<p align="justify">
 En Pyhton no existe la estructura de control do-while. Sin embargo podríamos similar su uso con un while (true) y un break en el caso de no cumplir la condición correspondiente.
+ 
 ```python
 while True:  
     numero = int(input("Introduce la opción a mostrar:"))  
@@ -127,10 +148,17 @@ while True:
     print("Vuelve a seleccionad una opción.")  
 print("Saliendo el ")
 ```
+</p>
+
 **2. Estructuras de datos**
+<p align="justify">
 Cuando hablamos de variables en un lenguaje de programación, nos referimos a la capacidad del lenguaje a guardar un dato para utilizarlo a posteriori bien sea referenciándolo para acceder al valor guardado o para poder modificarlo. En el caso de querer guardar más de un valor, la primera posibilidad es utilizar más de una variable, pero en algunos casos esta no es la mejor opción, siendo las estructuras de datos la solución. Es por tanto que las estructuras de datos representan un conjuto de datos guardados en una misma unidad. Las estructuras principales dentro de Python son list, tuplas, diccionarios y conjunto o set.  
+</p>
+
 **2.1. List**
+<p align="justify">
 Una lista de datos, es una estructura de datos ordenada, lo cual quiere decir que los elementos están asociados a posiciones siendo el 0 la primera, y mutable de elementos los cuales pueden ser de cualquier tipo. Para poder crear una lista se utilizan []
+ 
 ```python
 listaElementos = ["Elemento1", "Elemento2", "Elemento3"]
 ```
@@ -176,17 +204,22 @@ p = [p for p in listaElementos if "2" in p]
 listaElementos.sort(key=len)
 ```
 Importante: En Python se puede acceder a la posición de un elemento a través de de posiciones negativas, siendo el elemento en la posición -1 el último elemento de la lista, el -2 el antepenúltimo y así sucesivamente.
+</p>
 
 **Ejercicio**
+<p align="justify">
 Realiza el siguiente ejercicio para practicar las listas:  
 Crea una aplicación en consola donde se permitan gestionar las calificaciones de la asignatura. Para ello, mediante un menú permite las siguientes acciones  
     • Introducir notas: el usuario introducirá notas hasta que meta un -1. Esto indicará que la introducción ha terminado. Una vez realizado esto volverá a aparecer el mené  
     • Listar notas: se mostrarán todas las notas de una en una.  
     • Obtener extremos: se mostrarán la nota más alta y baja.  
     • Obtener información: se mostrarán los siguientes datos sobre las notas: total introducidas, número suspensos, número aprobador, nota media
+</p>
 
 **2.2. Tuplas**
+<p align="justify">
 Las tuplas son una estructura de datos muy similar a las listas apartado anterior con la diferencia que son no mutables, es decir que no pueden alterar su tamaño (no se puede ni agregar elementos y eliminarlos). Para poder crear una tupla se indican los elementos que forman parte de ella
+ 
 ```python
 trabajadores = ("Juan", "Patricia", "Maria")
 ```
@@ -198,9 +231,12 @@ Nota: Es posible desempaquetar una tupla, o lo que es lo mismo crear variables a
   marca, modelo, anio, cv, precio = datos
 ```
 En las listas también existe esta posibilidad, pero al ser una colección dinámica el uso es más marginal (se puede utilizar el * al lado de la variable para indicar la extracción de la parte parcial de la lista)
+</p>
 
 **2.3. Diccionarios**
+<p align="justify">
 Otra de las posibilidades a la hora de utilizar la colección de datos son los diccionarios. A diferencia de las vistas, los diccionarios me permiten no solo meter datos en una colección mutable, sino que lo hacen relacionando una clave a un valor. Para la creación de un diccionario realizaremos 
+ 
 ```python
 trabajador = {  
     "nombre": "Celia",  
@@ -300,8 +336,10 @@ conjuntoDif = conjunto1.difference(conjunto2)
 # {1267}  
 conjuntoDif = conjunto1.symmetric_difference(conjunto2)
 ```
-**Ejercicio**
+</p>
 
+**Ejercicio**
+<p align="justify">
 Realiza el siguiente ejercicio para practicar lo visto en esta unidad:  
 Crea una aplicación que permita gestionar los proyectos de una empresa. Para ello sigue estos pasos:  
     • Pregunta al usuario cuantos proyectos va a registrar  
@@ -310,6 +348,7 @@ Crea una aplicación que permita gestionar los proyectos de una empresa. Para el
     • Muestra por consola solo el nombre y presupuesto de cada uno de los proyectos  
 Conclusiones  
 Cuando se realiza un código de programación, se ha comprobado a lo largo de la unidad que las estructuras de control representan un elemento básico para poder modelar y “reconducir” el código dependiendo de condiciones lógicas o ejecuciones recurrentes. Además, también hemos podido ver que el uso de estructuras de datos permite juntar diferentes tipos de datos en un mismo elemento para poder así.
+</p>
 
 **Referencias bibliográficas**
  * Página web oficial de Pyhton <https://www.python.org>  
