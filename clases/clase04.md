@@ -199,7 +199,7 @@ def procesar_informe(*datos):
         return "Cantidad de datos incorrecta"  
     else:  
         return "No se han recibido datos"  
-print(procesar_informe("Borja", "Martinez"))
+print(procesar_informe("Gilbert", "Martinez"))
 ```
 En este caso la llamada a la función procesar_informe retorna un string con los datos pasados por parámetros en el caso de ser 2 (recordar que el parámetro *args es una tupla). En caso contrario retornara o “cantidad incorrecta” o “no se han recibido datos”. Una vez llamada la función, al obtenerse el string, este puede ser utilizado desde cualquier parte, como por ejemplo dentro de una función print() como en el ejemplo.
 
