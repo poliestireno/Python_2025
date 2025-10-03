@@ -10,7 +10,7 @@ Presentación
 
 2.2.	Tipos de parámetros	
 
-2.3.	Uso de args y kwargs	
+2.3.	Uso de *args y **kwargs	
 
 2.4.	Uso del retorno	
 
