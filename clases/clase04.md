@@ -1,38 +1,35 @@
 
+Presentación	
 
-Índice
+1\.	Funciones en Python	
 
-[Presentación	3](#presentación)
+2\.	Definición y uso	
 
-[1\.	Funciones en Python	3](#funciones-en-python)
+2.1.	Uso de parámetros	
 
-[2\.	Definición y uso	4](#definición-y-uso)
+2.2.	Tipos de parámetros	
 
-[2.1.	Uso de parámetros	4](#uso-de-parámetros)
+2.3.	Uso de \*args y \*\*kwargs	
 
-[2.2.	Tipos de parámetros	5](#tipos-de-parámetros)
+2.4.	Uso del retorno	
 
-[2.3.	Uso de \*args y \*\*kwargs	6](#uso-de-*args-y-**kwargs)
+2.5.	Funciones lambda	
 
-[2.4.	Uso del retorno	7](#uso-del-retorno)
+3\.	Modularidad	
 
-[2.5.	Funciones lambda	8](#funciones-lambda)
+Conclusiones	
 
-[3\.	Modularidad	8](#modularidad)
-
-[Conclusiones	11](#conclusiones)
-
-[Referencias bibliográficas	11](#referencias-bibliográficas)
+Referencias bibliográficas	
 
 	
 
-# **Presentación** {#presentación}
+# **Presentación** 
 
 En este tema vamos a profundizar en dos conceptos fundamentales en la programación estructurada: las funciones y la modularidad. A medida que los programas crecen en tamaño y complejidad, se hace indispensable dividir el código en bloques más manejables y reutilizables. Aquí es donde entran en juego las funciones: nos permiten organizar el código de forma lógica, mejorar su legibilidad y facilitar el mantenimiento.
 
 Además, veremos cómo aplicar el principio de modularidad, que consiste en construir programas dividiéndolos en módulos o partes bien definidas, cada una con una función clara. Este enfoque no solo mejora la calidad del software, sino que también facilita el trabajo en equipo, la depuración de errores y la reutilización del código en diferentes proyectos. A lo largo del tema aprenderemos a crear y utilizar funciones propias, a entender cómo se comunican entre sí, y cómo sacar el máximo partido al diseño modular en nuestros desarrollos.
 
-1. # **Funciones en Python** {#funciones-en-python}
+1. # **Funciones en Python** 
 
 Imaginemos que estamos haciendo un programa y ciertas funcionalidades son muy similares, coincidiendo en la mayoría de las líneas de código. Para un programador principiante, escribir dos veces el mismo código en partes diferentes del programa no sopone gran esfuerzo, pero sin embargo cuando el programador va adquiriendo soltura, este tipo de prácticas se hace pesada y nada recomendable. En el día a día, es muy común que tengamos que repetir ciertas acciones o que queramos organizar mejor nuestro código, no solo para que funcione de forma más eficaz, sino también para para que sea más fácil de leer, mantener y reutilizar. Imaginemos un código que debemos mantener tras 1 mes de inactividad, o simplemente leer un código que nos es heredado de otros equipos. Si este está bien realizado y modularizado, la tarea se simplifica en gran medida. En estos casos, las funciones juegan un papel fundamental.
 
@@ -46,7 +43,7 @@ Otro punto clave es que las funciones también nos permiten trabajar en equipo d
 
 En Python, existen funciones que ya están predefinidas, como print() input() len() pero el programador tiene la capacidad de crear las suyas propias e incorporarlas a la funcionalidad del programa.
 
-2. # **Definición y uso** {#definición-y-uso}
+2. # **Definición y uso** 
 
 Antes de comenzar con las palabras reservadas para definir funciones, vamos hacer un inciso en el nombrado de las mismas. A la hora de nombrar una función en Python, lo más recomendable es utilizar nombres que describan claramente lo que hace. Deben ser lo más claros, específicos y descriptivos posible, evitando abreviaturas confusas o palabras genéricas. Por convención, se usan letras minúsculas y, si el nombre tiene varias palabras, se separan con guiones bajos (\_), lo que se conoce como snake\_case. Por ejemplo, si una función calcula la media de una lista de notas, un buen nombre sería calcular\_media en lugar de algo genérico como funcion1 o mediaNotas. Esto facilita la lectura del código y hace que cualquiera que lo vea pueda entender rápidamente qué hace cada parte.
 
