@@ -1,2 +1,5 @@
 1. [Presentación](clases/clase01.md)
 2. [Sintaxis básica](clases/clase02.md)
+3. [Estructuras de control y datos](clases/clase03.md)
+4. [Funciones](clases/clase04.md)
+5. [Programación orientada a objetos](clases/clase05.md)
